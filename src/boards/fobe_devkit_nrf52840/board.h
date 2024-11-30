@@ -30,13 +30,16 @@
 /*------------------------------------------------------------------*/
 /* LED
  *------------------------------------------------------------------*/
-#define LEDS_NUMBER           0
-#define LED_STATE_ON          0
+#define LEDS_NUMBER             3
+/* This is the Green led marked D1 on the board */
+#define LED_PRIMARY_PIN         _PINNUM(1, 6)
+/* This is the Red led marked D2 on the board */
+#define LED_SECONDARY_PIN  	_PINNUM(1, 7)
+/* This is the Blue led marked D3 on the board */
+#define LED_TERTIARY_PIN  	_PINNUM(0, 26)
+#define LED_STATE_ON            0
 
-#define LED_RGB_RED_PIN       _PINNUM(1, 7)
-#define LED_RGB_GREEN_PIN     _PINNUM(1, 6)
-#define LED_RGB_BLUE_PIN      _PINNUM(0, 26)
-#define BOARD_RGB_BRIGHTNESS  0x808080
+#define NEOPIXELS_NUMBER      0
 /*------------------------------------------------------------------*/
 /* BUTTON
  *------------------------------------------------------------------*/
