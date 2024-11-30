@@ -22,8 +22,8 @@
  * THE SOFTWARE.
  */
 
-#ifndef _FOBE_NRF82540_CONNECT_KIT_H_
-#define _FOBE_NRF82540_CONNECT_KIT_H_
+#ifndef _FOBE_DEVKIT_NRF82540_H_
+#define _FOBE_DEVKIT_NRF82540_H_
 
 #define _PINNUM(port, pin)    ((port)*32 + (pin))
 
@@ -67,4 +67,4 @@
 #define UF2_INDEX_URL           "https://docs.nordicsemi.com/bundle/ps_nrf52840/page/keyfeatures_html5.html"
 
 
-#endif /* _FOBE_NRF82540_CONNECT_KIT_H_ */
+#endif /* _FOBE_DEVKIT_NRF82540_H_ */
