@@ -153,8 +153,8 @@ char const* string_desc_arr [] =
   BLEDIS_MANUFACTURER,           // 1: Manufacturer
   BLEDIS_MODEL,                  // 2: Product
   desc_str_serial,               // 3: Serials, should use chip ID
-  "nRF Serial",                  // 4: CDC Interface
-  "nRF UF2",                     // 5: MSC Interface
+  "UF2 Serial",                  // 4: CDC Interface
+  "UF2 Bootloader",              // 5: MSC Interface
 };
 
 // up to 64 unicode characters
