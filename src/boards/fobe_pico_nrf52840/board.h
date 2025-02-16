@@ -30,10 +30,11 @@
 /*------------------------------------------------------------------*/
 /* LED
  *------------------------------------------------------------------*/
-#define LEDS_NUMBER             0
-#define LED_STATE_ON            0
+#define LEDS_NUMBER           1  // User LED
+#define LED_PRIMARY_PIN       _PINNUM(0, 24)
+#define LED_STATE_ON          0
 
-#define LED_NEOPIXEL           _PINNUM(0, 25)
+#define LED_NEOPIXEL           _PINNUM(0, 13)
 #define NEOPIXELS_NUMBER      1
 #define BOARD_RGB_BRIGHTNESS  0x040404
 /*------------------------------------------------------------------*/
@@ -48,7 +49,7 @@
 // BLE OTA
 //--------------------------------------------------------------------+
 #define BLEDIS_MANUFACTURER   "FoBE"
-#define BLEDIS_MODEL          "FoBE DevKit nRF52840"
+#define BLEDIS_MODEL          "FoBE Pico nRF52840"
 
 //--------------------------------------------------------------------+
 // USB
@@ -60,9 +61,9 @@
 //--------------------------------------------------------------------+
 // UF2
 //--------------------------------------------------------------------+
-#define UF2_PRODUCT_NAME        "FoBE DevKit nRF52840"
-#define UF2_VOLUME_LABEL        "DevKit Boot"
-#define UF2_BOARD_ID            "FoBE-DevKit-nRF52840"
+#define UF2_PRODUCT_NAME        "FoBE Pico nRF52840"
+#define UF2_VOLUME_LABEL        "Pico Boot"
+#define UF2_BOARD_ID            "FoBE-Pico-nRF52840"
 #define UF2_INDEX_URL           "https://docs.nordicsemi.com/bundle/ps_nrf52840/page/keyfeatures_html5.html"
 
 
