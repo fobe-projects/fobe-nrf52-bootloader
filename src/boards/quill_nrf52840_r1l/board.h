@@ -1,7 +1,7 @@
 /*
  * The MIT License (MIT)
  *
- * Copyright (c) 2018 Ha Thach for Adafruit Industries
+ * Copyright (c) 2024 ChihoSin for FoBE
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -22,43 +22,48 @@
  * THE SOFTWARE.
  */
 
-#ifndef _ARDUINOBLE33_NRF52840_H
-#define _ARDUINOBLE33_NRF52840_H
+#ifndef _QUILL_NRF52840_R1L_H_
+#define _QUILL_NRF52840_R1L_H_
 
 #define _PINNUM(port, pin)    ((port)*32 + (pin))
 
 /*------------------------------------------------------------------*/
 /* LED
  *------------------------------------------------------------------*/
-#define LEDS_NUMBER           1  // red LED
-#define LED_PRIMARY_PIN       _PINNUM(0, 24)
-#define LED_STATE_ON          0
+#define LEDS_NUMBER        1
+#define LED_PRIMARY_PIN   _PINNUM(1, 15) // Blue
+#define LED_STATE_ON      0
+
+#define NEOPIXELS_NUMBER      0
 
 /*------------------------------------------------------------------*/
 /* BUTTON
  *------------------------------------------------------------------*/
 #define BUTTONS_NUMBER        2
-#define BUTTON_1              _PINNUM(1, 11)  // D2 switch
-#define BUTTON_2              _PINNUM(1, 12)  // D3 switch
+#define BUTTON_1              _PINNUM(0, 18)  // P1.03: NC
+#define BUTTON_2              _PINNUM(1, 10)  // P1.18: NC
 #define BUTTON_PULL           NRF_GPIO_PIN_PULLUP
 
 //--------------------------------------------------------------------+
 // BLE OTA
 //--------------------------------------------------------------------+
-#define BLEDIS_MANUFACTURER   "Arduino"
-#define BLEDIS_MODEL          "Nano 33 BLE"
+#define BLEDIS_MANUFACTURER   "FoBE Studio"
+#define BLEDIS_MODEL          "Quill nRF52840 R1L"
 
 //--------------------------------------------------------------------+
 // USB
 //--------------------------------------------------------------------+
 #define USB_DESC_VID           0x239A
-#define USB_DESC_UF2_PID       0x0063
-#define USB_DESC_CDC_ONLY_PID  0x0064
+#define USB_DESC_UF2_PID       0x0029
+#define USB_DESC_CDC_ONLY_PID  0x002A
 
-//------------- UF2 -------------//
-#define UF2_PRODUCT_NAME   "Arduino Nano 33 BLE"
-#define UF2_VOLUME_LABEL   "NANO33BOOT"
-#define UF2_BOARD_ID       "nRF52840-Nano-33"
-#define UF2_INDEX_URL      "https://www.arduino.cc/"
+//--------------------------------------------------------------------+
+// UF2
+//--------------------------------------------------------------------+
+#define UF2_PRODUCT_NAME        "Quill nRF52840 R1L"
+#define UF2_VOLUME_LABEL        "Quill Boot"
+#define UF2_BOARD_ID            "quill_nrf52840_r1l"
+#define UF2_INDEX_URL           "https://wiki.fobestudio.com/development-board/quill/fobe-quill-nrf52840-r1l/overview/"
 
-#endif // _ITSY_NRF52840_H
+
+#endif /* _QUILL_NRF52840_R1L_H_ */
