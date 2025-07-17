@@ -1,7 +1,7 @@
 /*
  * The MIT License (MIT)
  *
- * Copyright (c) 2018 Ha Thach for Adafruit Industries
+ * Copyright (c) 2025 FoBE Studio.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -22,42 +22,48 @@
  * THE SOFTWARE.
  */
 
-#ifndef PCA10056_H
-#define PCA10056_H
+#ifndef _FOBE_MESH_TRACKER_C1_H_
+#define _FOBE_MESH_TRACKER_C1_H_
+
+#define _PINNUM(port, pin)    ((port)*32 + (pin))
 
 /*------------------------------------------------------------------*/
 /* LED
  *------------------------------------------------------------------*/
-#define LEDS_NUMBER         2
-#define LED_PRIMARY_PIN     13
-#define LED_SECONDARY_PIN   14
-#define LED_STATE_ON        0
+#define LEDS_NUMBER        1
+#define LED_PRIMARY_PIN   _PINNUM(1, 11) // Blue
+#define LED_STATE_ON      0
+
+#define NEOPIXELS_NUMBER      0
 
 /*------------------------------------------------------------------*/
 /* BUTTON
  *------------------------------------------------------------------*/
-#define BUTTONS_NUMBER      2
-#define BUTTON_1            11
-#define BUTTON_2            12
-#define BUTTON_PULL         NRF_GPIO_PIN_PULLUP
+#define BUTTONS_NUMBER        2
+#define BUTTON_1              _PINNUM(0, 18)  // P0.18: NC
+#define BUTTON_2              _PINNUM(1, 0)  // P1.00: NC
+#define BUTTON_PULL           NRF_GPIO_PIN_PULLUP
 
 //--------------------------------------------------------------------+
 // BLE OTA
 //--------------------------------------------------------------------+
-#define BLEDIS_MANUFACTURER    "Nordic"
-#define BLEDIS_MODEL           "PCA10056"
+#define BLEDIS_MANUFACTURER   "FoBE Studio"
+#define BLEDIS_MODEL          "FoBE IDEA Mesh Tracker C1"
 
 //--------------------------------------------------------------------+
 // USB
 //--------------------------------------------------------------------+
-
-// Shared VID/PID with Feather nRF52840, will be disabled for building in the future
 #define USB_DESC_VID           0x239A
-#define USB_DESC_UF2_PID       0x00DA
-#define USB_DESC_CDC_ONLY_PID  0x00DA
+#define USB_DESC_UF2_PID       0x0029
+#define USB_DESC_CDC_ONLY_PID  0x002A
 
-#define UF2_PRODUCT_NAME    "Nordic nRF52840 DK"
-#define UF2_BOARD_ID        "nRF52840-pca10056-v1"
-#define UF2_INDEX_URL       "https://www.nordicsemi.com/Software-and-Tools/Development-Kits/nRF52840-DK"
+//--------------------------------------------------------------------+
+// UF2
+//--------------------------------------------------------------------+
+#define UF2_PRODUCT_NAME        "FoBE IDEA Mesh Tracker C1"
+#define UF2_VOLUME_LABEL        "FoBE Boot"
+#define UF2_BOARD_ID            "f2102_r1a"
+#define UF2_INDEX_URL           "https://docs.fobestudio.com/product/f2102"
 
-#endif // PCA10056_H
+
+#endif /* _FOBE_MESH_TRACKER_C1_H_ */

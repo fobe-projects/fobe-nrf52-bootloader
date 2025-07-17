@@ -1,7 +1,7 @@
 /*
  * The MIT License (MIT)
  *
- * Copyright (c) 2024 ChihoSin for FoBE
+ * Copyright (c) 2025 FoBE Studio.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -22,8 +22,8 @@
  * THE SOFTWARE.
  */
 
-#ifndef _QUILL_NRF52840_R1L_H_
-#define _QUILL_NRF52840_R1L_H_
+#ifndef _FOBE_QUILL_NRF52840_MESH_H_
+#define _FOBE_QUILL_NRF52840_MESH_H_
 
 #define _PINNUM(port, pin)    ((port)*32 + (pin))
 
@@ -48,7 +48,7 @@
 // BLE OTA
 //--------------------------------------------------------------------+
 #define BLEDIS_MANUFACTURER   "FoBE Studio"
-#define BLEDIS_MODEL          "Quill nRF52840 R1L"
+#define BLEDIS_MODEL          "FoBE Quill nRF52840 Mesh"
 
 //--------------------------------------------------------------------+
 // USB
@@ -60,10 +60,10 @@
 //--------------------------------------------------------------------+
 // UF2
 //--------------------------------------------------------------------+
-#define UF2_PRODUCT_NAME        "Quill nRF52840 R1L"
-#define UF2_VOLUME_LABEL        "Quill Boot"
-#define UF2_BOARD_ID            "quill_nrf52840_r1l"
-#define UF2_INDEX_URL           "https://wiki.fobestudio.com/development-board/quill/fobe-quill-nrf52840-r1l/overview/"
+#define UF2_PRODUCT_NAME        "FoBE Quill nRF52840 Mesh"
+#define UF2_VOLUME_LABEL        "FoBE Boot"
+#define UF2_BOARD_ID            "f1101_r1a"
+#define UF2_INDEX_URL           "https://docs.fobestudio.com/product/f1101"
 
 
-#endif /* _QUILL_NRF52840_R1L_H_ */
+#endif /* _FOBE_QUILL_NRF52840_MESH_H_ */
