@@ -48,7 +48,7 @@
 // BLE OTA
 //--------------------------------------------------------------------+
 #define BLEDIS_MANUFACTURER   "FoBE Studio"
-#define BLEDIS_MODEL          "Quill nRF52840"
+#define BLEDIS_MODEL          "FoBE Quill nRF52840 Mesh"
 
 //--------------------------------------------------------------------+
 // USB
@@ -61,7 +61,7 @@
 // UF2
 //--------------------------------------------------------------------+
 #define UF2_PRODUCT_NAME        "FoBE Quill nRF52840 Mesh"
-#define UF2_VOLUME_LABEL        "Quill Boot"
+#define UF2_VOLUME_LABEL        "FoBE Boot"
 #define UF2_BOARD_ID            "f1101_r1a"
 #define UF2_INDEX_URL           "https://wiki.fobestudio.com/product/f1101"
 
